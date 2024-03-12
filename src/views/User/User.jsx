@@ -1,7 +1,11 @@
+import Avatar from "../../components/Avatar"
+
 function User () {
 
     return (
-        <div> Hola soy User </div>
+        <div>
+            <Avatar/>
+        </div>
     )
 }
 

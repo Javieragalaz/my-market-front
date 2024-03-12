@@ -13,14 +13,17 @@ function Dashboard() {
         <div>/</div>
         <Link>Profile</Link>
       </div>
-      <div>
-        <Outlet />
-      </div>
+      <div className="grid grid-cols-[200px_minmax(100px,_1fr)_800px]"> 
+   
       <SideBar items={[
+        { label: 'User', Icon: () => User, link: 'user' },
         { label: 'Products', Icon: () => Tablet, link: 'products' },
         { label: 'Tools', Icon: () => Tool, link: 'tools' },
-        { label: 'User', Icon: () => User, link: 'user' },
+        
       ]} />
+       <Outlet>
+       </Outlet>
+          </div>
 
 
 

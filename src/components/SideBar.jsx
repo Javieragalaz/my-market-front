@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem"
 
 function SideBar({ items }) {
   return (
-    <div className=" shadow-sm shadow-black w-2/12 h-screen bg-gray-800">
+    <div className=" shadow-sm shadow-black h-screen bg-gray-800">
       {items.map((item, i) => {
         const Icon = item.Icon()
         return (
